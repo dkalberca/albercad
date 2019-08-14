@@ -33,7 +33,7 @@
 
 			<td ><input type="Reset"></td>
 
-			<td><a href="index.php"><input type="submit" onclick="return check(this.form)" value="Login"></a>
+			<td><a href="welcomepage.php"><input type="submit" onclick="return check(this.form)" value="Login"></a>
 				|| <a href="forgotpassword.php">Forgot Password</a> || <a href="signup.php">Sign Up</a></td>
 
 			</tr>
