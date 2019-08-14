@@ -7,6 +7,6 @@
 	<p><h3><a href="alberca1.php">Photo 1</a></h3></p>
 	<p><h3><a href="alberca2.php">Photo 2</a></h3></p>
 	<p><h3><a href="alberca3.php">Photo 3</a></h3></p>
-<p><h3><a href="index.php>Logout</a></h3></p>
+	<p><h3><a href="index.php">Logout</a></h3></p>
 </body></center>
 </html>
