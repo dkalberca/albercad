@@ -9,6 +9,6 @@
 	<br/>
 	<input type="password" placeholder="Enter new password">
 	<p>
-	<a href="passwordreset.html"><input type="submit" onclick="return check(this.form)" value="Reset Password"></a></p>
+	<a href="passwordreset.php"><input type="submit" onclick="return check(this.form)" value="Reset Password"></a></p>
 </body></center>
 </html>
