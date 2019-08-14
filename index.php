@@ -34,7 +34,7 @@
 			<td ><input type="Reset"></td>
 
 			<td><a href="index.php"><input type="submit" onclick="return check(this.form)" value="Login"></a>
-				|| <a href="forgotpassword.html">Forgot Password</a> || <a href="signup.html">Sign Up</a></td>
+				|| <a href="forgotpassword.php">Forgot Password</a> || <a href="signup.php">Sign Up</a></td>
 
 			</tr>
 
