@@ -1,0 +1,58 @@
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style1.css">
+<head>
+
+	<title>ALBERCA, DX</title>
+</head>
+
+
+<body>
+	<h2>ROCK • PAPER • SCISSORS</h2>
+		<h1>GAME</h1>
+
+<form name="loginform" onSubmit="return validateForm();" action="game.html" method="post">
+ <div class="imgcontainer">
+  </div>
+
+    <p class="one"><label><i>Username:</i></label></p>
+    <input type="text" name="usr" placeholder="Username"> 
+    <p class="two"><label><i>Password:</i></label></p>
+    <input type="password" name="pword" placeholder="Password">
+    </br> </br>
+    <button type="submit">LOGIN</button>
+</form>
+<script>
+    function validateForm() {
+    	var username = "username"; 
+        var password = "password";
+        var un = document.loginform.usr.value;
+        var pw = document.loginform.pword.value;
+        
+        if ((un=="username") && (pw=="password")) {
+        	alert("WELCOME!");
+        	alert("WELCOME USER: DEXTEIN XEVIER F. ALBERCA");
+            return true;
+        }
+	if (( un == "" ) && ( pw == "" )) {
+    	alert("Username and Password are required.");
+    	return false;
+    	}
+	if ( un == "" ) {
+    	alert("Username is required.");
+    	return false;
+    	}
+	if ( pw == "" ) {
+    	alert("Password is required.");
+    	return false;
+    	}
+        else {
+            alert ("Incorrect Username or Password.");
+	    document.loginform.reset();
+            return false;
+        }
+  }
+</script>
+</body>
+</html>

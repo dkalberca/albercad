@@ -1,0 +1,99 @@
+body {
+background-image: url(http://66.media.tumblr.com/81995e2e80f88f7f3a7030dd8e7bec01/tumblr_na6m7obIIv1qlyfm1o7_500.gif);
+	text-align:center;
+	background-size:cover;
+	background-attachment: fixed;
+	font-family:"Times New Roman", Times, serif;
+
+}
+
+header {
+	margin: 10px 10px;
+	padding: 20px;
+	color: orange;
+	text-align: center;
+	font-size: 50px;
+	font-weight: bold;
+	font-family: "Times New Roman", Times, serif;
+}
+
+
+.Score {
+	width: 150px;
+	padding-top: 25px;
+	margin: 20px auto;
+	font-size:50px;
+	font-weight: bold;
+	font-family: "Times New Roman", Times, serif;
+	color: black;
+	text-align: center;
+	position: relative;
+}
+
+.name {
+	font-size: 25px;
+}
+
+ #user-name {
+ 	position: absolute;
+ 	top: 0px;
+ 	left: 0px;
+ }
+
+ #computer-name {
+ 	position: absolute;
+ 	top: 0px;
+ 	right: 0px;
+ }
+
+
+.choices {
+	text-align: center;
+}
+
+.choice {
+	margin: 30px;
+	padding: 15px 32px;
+	border-radius: 25px;
+	display: inline-block;
+	color: black;
+	background-color: red;
+	font-size: 20px;
+	font-weight: bold;
+	transition: all 0.5s;
+}
+.logout{
+	margin: 30px;
+	padding: 15px 32px;
+	border-radius: 25px;
+	display: inline-block;
+	color: black;
+	background-color: red;
+	font-size: 20px;
+	font-weight: bold;
+	transition: all 0.5s;
+
+
+}
+.logout:hover {
+	background: black;
+	color: red;
+	cursor: pointer;}
+.result {
+	margin: 300px;
+	padding: -300px;
+	border: 5px solid red;
+	background-color: red;
+	text-align: center;
+}
+.choice:hover {
+	background: black;
+	color: red;
+	cursor: pointer;
+
+}
+
+p {
+	margin: 10px auto;
+	font-size: 25px;
+}

@@ -1,0 +1,64 @@
+body{
+	background-image: url(https://i.gifer.com/BQJH.gif);
+	text-align:center;
+	background-size:cover;
+	background-attachment: fixed;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 150%;	
+	
+}
+
+h1{
+font-family: "Times New Roman", Times, serif;
+font-size: 150%;
+color: black;
+}
+
+h2{
+font-family: "Times New Roman", Times, serif;
+font-size: 200%;
+color: black;
+}
+
+form{
+margin: auto;
+max-width: 300px;
+margin: 0 auto 100px;
+padding: 30px;
+text-align:center;
+
+}
+
+input{
+	font-family: "Times New Roman", Times, serif;
+	outline: 10;
+	width: 100%;
+        border: 100px;
+	margin: auto;
+	padding: 10px;
+	font-size: 11px;
+box-sizing: border-box;
+border: 2px solid orange;
+border-radius: 4px;
+}
+
+
+button{
+	background-color: orange;
+	font-family: "Times New Roman", Times, serif;
+	border: 10px;
+	color: black;
+	padding: 10px 30px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	transition-duration: 0.2s;
+	
+}
+
+button:hover{
+	background-color: orange;
+	color: white;
+	
+}
