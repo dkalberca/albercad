@@ -1,5 +1,5 @@
 let userscore = 0;
-let computerscore = 0;
+let compscore = 0;
 const userscore_span = document.getElementById("user-score");
 const compscore_span = document.getElementById("computer-score");
 const score_div = document.querySelector(".Score");
@@ -58,3 +58,114 @@ function check(letter){
 	result_p.innerHTML = "Done Checking"
 
 }
+
+
+
+
+function convert(letter){
+	switch (letter){
+		case "R":
+		return "Rock"
+		break;
+		case "P":
+		return "Paper"
+		break;
+		case "S":
+		return "Scissors"
+		break;
+	}
+}
+
+
+
+
+function wins(user, comp){
+	userscore++;
+	console.log("win");
+	userscore_span.innerHTML = userscore;
+	result_p.innerHTML = " Player:" + convert(user) + " Computer:" + convert(comp) + " Win. "
+}
+
+function draw(user, comp){
+    console.log("tie");
+	result_p.innerHTML = " Player:" + convert(user) + " Computer:" + convert(comp) + " Draw "
+}
+
+function lose(user, comp){
+    compscore++;
+    console.log("lose");
+	compscore_span.innerHTML = compscore;
+	result_p.innerHTML = " Player:" + convert(user) + " Computer:" + convert(comp) + " Lose. "
+}
+
+
+
+
+
+function comp(){
+	const choices = [ 'R' , 'P' , 'S' ];
+	const randomnumber = (Math.floor(Math.random() * 3));
+	return choices[randomnumber];
+}
+
+
+
+
+
+
+
+function game(userchoice) {
+	const computerchoice = comp();
+	switch (userchoice + computerchoice){
+
+		case "RS":
+		case "PR":
+		case "SP":
+		wins(userchoice, computerchoice);
+		break;
+		case "RR":
+		case "PP":
+		case "SS":
+		draw(userchoice, computerchoice);
+		break;
+		case "SR":
+		case "RP":
+		case "PS":
+		lose(userchoice, computerchoice);
+		break;
+
+
+	}
+}
+
+
+
+
+
+
+
+
+function main(){
+
+rock_div.addEventListener('click', function() {
+	game("R");
+})
+
+paper_div.addEventListener('click', function() {
+	game("P");
+})
+
+scissors_div.addEventListener('click', function() {
+    game("S");
+})
+
+check_div.addEventListener('click', function(){
+	check("C");
+})
+
+}
+
+
+
+
+main();
