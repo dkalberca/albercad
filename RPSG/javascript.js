@@ -1,4 +1,4 @@
-let playerscore = 0;
+let userscore = 0;
 let computerscore = 0;
 const userscore_span = document.getElementById("user-score");
 const compscore_span = document.getElementById("computer-score");
