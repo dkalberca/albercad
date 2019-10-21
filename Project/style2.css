@@ -1,0 +1,100 @@
+body{
+	background-image: url(https://wallpaperplay.com/walls/full/d/c/3/21659.jpg);
+	text-align:center;
+	background-size:cover;
+	background-attachment: fixed;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 175%;
+}
+.header{
+  background-image: url(https://i.pinimg.com/originals/88/6e/b5/886eb51b07c5ae6e8fe7b8db2317406c.jpg);
+  padding: 20px
+}
+.navbar {
+  overflow: hidden;
+  background-color: #FFF0F5;
+  text-align: center;
+}
+.navbar a {
+  display: inline-block;
+  color: #FFF0F5;
+  text-align: center;
+  padding: 25px 15px;
+  text-decoration: none;
+  transition-duration:  1s;
+}
+.navbar a:hover {
+  background: linear-gradient(to right, white, black);
+  color: black;
+}
+.leftcolumn {   
+  float: left;
+  width: 70%;
+}
+.rightcolumn {
+  float: right;
+  width: 25%;
+}
+.card {
+  background-color: #FFF0F5;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.footer {
+  background-color: ;
+  padding: 5px;
+  text-align: center;
+  border-radius: 20px;
+}
+h1{
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Comic Sans MS", cursive, sans-serif
+
+}
+h3{
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Comic Sans MS", cursive, sans-serif
+}
+h2{
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Comic Sans MS", cursive, sans-serif
+}
+button{
+  background: linear-gradient(to bottom right, red, yellow);
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid white;
+  border-radius: 20px;
+  color: white;
+  font-size: 60px;
+  padding: 18px 42px;
+  box-shadow: 2px 6px 2px #fff;
+}
+button:hover{
+  background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+}
+button:active{
+  transform: translateY(4px);
+  box-shadow: 0px 2px 1px #fff;
+}
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}

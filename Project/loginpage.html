@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>BUTTONS BUTTONS</title>
+    <link rel="stylesheet" href="style1.css">
+  </head>
+  <body>
+    <form class="box" name="loginform" onSubmit="return validateForm();" action="intro.html" method="post">
+  <h1>Login</h1>
+  <input type="text" name="usr" placeholder="Username">
+  <input type="password" name="pword" placeholder="Password">
+  <input type="submit" name="" value="Login">
+</form>
+<script>
+    function validateForm() {
+    	var username = "username"; 
+        var password = "password";
+        var un = document.loginform.usr.value;
+        var pw = document.loginform.pword.value;
+        
+        if ((un=="username") && (pw=="password")) {
+        	alert("YOU PRESSED THE BUTTON! O.O");
+        	alert("WELCOME USER: DEXTEIN XEVIER F. ALBERCA");
+            return true;
+        }
+	if (( un == "" ) && ( pw == "" )) {
+    	alert("Username and Password are required.");
+    	return false;
+    	}
+	if ( un == "" ) {
+    	alert("Username is required.");
+    	return false;
+    	}
+	if ( pw == "" ) {
+    	alert("Password is required.");
+    	return false;
+    	}
+        else {
+            alert ("Incorrect Username or Password.");
+	    document.loginform.reset();
+            return false;
+        }
+  }
+</script>
+</body>
+</html>

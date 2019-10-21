@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Random images</title>
+	<link rel="stylesheet" href="style6.css">
+</head>
+
+<body onload="if(document.referrer=='') self.location=loginpage.html;">
+	<div>
+		<button onclick="randomSite();">RANDOM IMAGES</button>
+	</div>
+</body>
+<script>
+    var sites = [
+        'http://i.ytimg.com/vi/oHg5SJYRHA0/hqdefault.jpg',
+        'https://i.kym-cdn.com/entries/icons/original/000/010/843/ricardo.jpg',
+        'http://cdn1.wakanim.tv/movies-pictures/a36c0ce2-a2dc-43d5-944e-6b639657ba57.jpg',
+        'https://toppng.com/public/uploads/preview/trollface-115507175970pk83porcj.png',
+        'https://www.clipartwiki.com/clipimg/detail/105-1053577_clipart-wallpaper-blink-troll-face-transparent.png',
+        'https://i.ytimg.com/vi/SQJrYw1QvSQ/maxresdefault.jpg',
+        'https://cdn.mos.cms.futurecdn.net/BwL2586BtvBPywasXXtzwA-320-80.jpeg',
+        'https://miro.medium.com/fit/c/1838/551/1*0KFB17_NGTPB0XWyc4BSgQ.jpeg',
+        'https://www.elvisinfonet.com/image-files/TheKingCoverx.jpg',
+        'https://i.ytimg.com/vi/oonEEE16-GI/maxresdefault.jpg',
+    ];
+
+    function randomSite() {
+        var i = parseInt(Math.random() * 10);
+        location.href = sites[i];
+    }
+</script>
+</html>

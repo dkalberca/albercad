@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rankdom links</title>
+	<link rel="stylesheet" href="style4.css">
+</head>
+
+<body onload="if(document.referrer=='') self.location=loginpage.html;">
+	<div>
+		<button onclick="randomSite();">RANDOM LINKS</button>
+	</div>
+</body>
+<script>
+    var sites = [
+        'http://www.google.com',
+        'http://www.stackoverflow.com',
+        'http://www.w3schools.com',
+        'http://www.youtube.com',
+        'http://www.facebook.com',
+        'http://www.instagram.com',
+        'http://www.twitter.com',
+        'http://www.9gag.com',
+        'http://www.gogoanime.tv',
+        'http://www.mangarock.com',
+    ];
+
+    function randomSite() {
+        var i = parseInt(Math.random() * 10);
+        location.href = sites[i];
+    }
+</script>
+</html>

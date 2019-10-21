@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Random videos</title>
+	<link rel="stylesheet" href="style5.css">
+</head>
+
+<body onload="if(document.referrer=='') self.location=loginpage.html;">
+	<div>
+		<button onclick="randomSite();">RANDOM VIDEOS</button>
+	</div>
+</body>
+<script>
+    var sites = [
+        'https://www.youtube.com/watch?v=pOmu0LtcI6Y',
+        'https://www.youtube.com/watch?v=SJsUSWVQeXk',
+        'https://www.youtube.com/watch?v=TQJ0MEA4atM',
+        'https://www.youtube.com/watch?v=e98P8ZByRDg',
+        'https://www.youtube.com/watch?v=wvLmBfwmA04',
+        'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+        'https://www.youtube.com/watch?v=4zBAoKtfom0',
+        'https://www.youtube.com/watch?v=UcRtFYAz2Yo',
+        'https://www.youtube.com/watch?v=dGHc5Vvjt4Q',
+        'https://www.youtube.com/watch?v=-h5WrWncDZw',
+    ];
+
+    function randomSite() {
+        var i = parseInt(Math.random() * 10);
+        location.href = sites[i];
+    }
+</script>
+</html>
