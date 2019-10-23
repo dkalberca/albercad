@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Black or White Game by Dextein Xevier Alberca</title>\
+</head>
+<style>
+body{
+	text-align: center;
+	font-family: Times New Roma:sans serif;
+}
+</style>
+<body>
+	<h1>Black or White game by Dextein Xevier Alberca [Set B]</h1>
+	<h3>Your Guess:</h3>
+	<button type="submit" value="black" id="a" onclick="mathRandom()">BLACK</button>&nbsp;&nbsp;&nbsp;<button type="submit" value="white" id="b" onclick="mathRandom()">WHITE</button>
+	<h2>Roullete Points to:</h2>
+	<p id="answer"></p>
+
+	<h2>Black or White developed by Dextein Xevier Alberca [Set B]</h2>
+</body>
+<script type="text/javascript">
+
+	var answers = [ "black",
+	"white"];
+
+	var index = Math.floor(Math.random() * answers.length);
+
+	if (guess == answers[index]) {
+		answer = answers[index];
+	} else {
+		answer = answers[index];
+	}
+	function mathRandom(){
+		document.getElementById("answer").innerHTML =
+		var index = Math.floor(Math.random() * answers.length);
+	}
+</script>
+</html>
